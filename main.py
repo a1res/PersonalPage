@@ -1,7 +1,6 @@
 import json
 import requests
 import streamlit as st
-from streamlit_lottie import st_lottie
 from streamlit_option_menu import option_menu
 from PIL import Image
 
@@ -76,10 +75,6 @@ if selected == 'Home':
         st.write('')
         st.write('')
     with col6:
-            st_lottie(lottie_coding, height=500,  width=500,)
-
-    col8, col9, col10, col11 = st.columns([1.5, 4.5, 4.5, 1.5])
-    with col10:
         st.header('O que o site contém:')
         st.write('')
         st.write('')
@@ -113,8 +108,6 @@ if selected == 'Home':
                  esteja procurando alguma forma de me contatar, assim como um box completamente
                  funcional em que você preenche com seu nome, email, e mensagem a ser enviada a mim.
                  ''')
-    with col9:
-        st_lottie(lottie_question)
 
 if selected == 'Trajetória Pessoal':
     col1, col2, col3, col4 = st.columns([2, 3, 6, 2])
